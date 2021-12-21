@@ -554,9 +554,9 @@ module.exports = function (webpackEnv) {
                   sourceMap: isEnvProduction
                     ? shouldUseSourceMap
                     : isEnvDevelopment,
-                  modules: {
-                    mode: 'icss',
-                  },
+                  // modules: {
+                  //   mode: 'icss',
+                  // },
                 },
                 'less-loader'
               ),
@@ -575,10 +575,10 @@ module.exports = function (webpackEnv) {
                   sourceMap: isEnvProduction
                     ? shouldUseSourceMap
                     : isEnvDevelopment,
-                  modules: {
-                    mode: 'local',
-                    getLocalIdent: getCSSModuleLocalIdent,
-                  },
+                  // modules: {
+                  //   mode: 'local',
+                  //   getLocalIdent: getCSSModuleLocalIdent,
+                  // },
                 },
                 'less-loader'
               ),
